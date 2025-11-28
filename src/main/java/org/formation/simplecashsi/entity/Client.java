@@ -30,4 +30,12 @@ public class Client {
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<CompteBancaire> comptes = new ArrayList<>();
 
+    public Client(String nom, String prenom, String adresse, String codePostal, String ville, String telephone) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.adresse = adresse;
+        this.codePostal = codePostal;
+        this.ville = ville;
+        this.telephone = telephone;
+    }
 }

@@ -16,4 +16,5 @@ public record ClientCreateDto(
         String ville,
         @Pattern(regexp = "^\\d{10}$", message = "Phone number must contain 10 digits")
         String telephone
-        ) {}
+        ) {
+}
